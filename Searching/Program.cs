@@ -11,8 +11,8 @@ namespace Searching
 
         private static void TestValidPerfectSquare()
         {
-            int num = 16; // return true
-            //int num = 14; // return false
+            //int num = 16; // return true
+            int num = 14; // return false
             //Console.WriteLine(ValidPerfectSquare.ValidPerfectSquare_Resolve_1(num));
             Console.WriteLine(ValidPerfectSquare.ValidPerfectSquare_Resolve_2(num));
         }
