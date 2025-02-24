@@ -1,4 +1,5 @@
 ﻿
+
 namespace Searching
 {
     internal class Program
@@ -6,7 +7,27 @@ namespace Searching
         static void Main(string[] args)
         {
             //TestBinarySearch();
-            TestValidPerfectSquare();
+            //TestValidPerfectSquare();
+            TestMinimumInRotatedSortedArray();
+        }
+
+        private static void TestMinimumInRotatedSortedArray()
+        {
+            int[] nums1 = { 3, 4, 5, 1, 2 };
+            int[] nums2 = { 4, 5, 6, 7, 0, 1, 2 };
+            int[] nums3 = { 11, 13, 15, 17 };
+
+            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_1(nums1));
+            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_1(nums2));
+            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_1(nums3));
+
+            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_2(nums1));
+            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_2(nums2));
+            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_2(nums3));
+
+            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_3(nums1));
+            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_3(nums2));
+            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_3(nums3));
         }
 
         private static void TestValidPerfectSquare()
