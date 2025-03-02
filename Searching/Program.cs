@@ -7,8 +7,8 @@ namespace Searching
         static void Main(string[] args)
         {
             //TestBinarySearch();
-            //TestValidPerfectSquare();
-            TestMinimumInRotatedSortedArray();
+            TestValidPerfectSquare();
+            //TestMinimumInRotatedSortedArray();
         }
 
         private static void TestMinimumInRotatedSortedArray()
@@ -17,9 +17,9 @@ namespace Searching
             int[] nums2 = { 4, 5, 6, 7, 0, 1, 2 };
             int[] nums3 = { 11, 13, 15, 17 };
 
-            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_1(nums1));
-            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_1(nums2));
-            Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_1(nums3));
+            //Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_1(nums1));
+            //Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_1(nums2));
+            //Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_1(nums3));
 
             Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_2(nums1));
             Console.WriteLine(MinimumInRotatedSortedArray.MinimumInRotatedSortedArray_Resolve_2(nums2));

@@ -26,9 +26,14 @@
             {
                 int mid = left + (right - left) / 2;
 
-                if (mid * mid == num)
+                int square = mid * mid;
+                if (square == num)
                 {
                     return true;
+                }
+                else if (square < num)
+                {
+                    left = mid + 1;
                 }
                 else
                 {
