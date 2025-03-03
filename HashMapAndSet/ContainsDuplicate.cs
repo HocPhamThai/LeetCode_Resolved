@@ -9,7 +9,7 @@ namespace HashMapAndSet
 {
     public static class ContainsDuplicate
     {
-        public static bool ContainsDuplicate_Resolve_1(int[] nums)
+        public static bool ContainsDuplicate_Resolve_1(int[] nums) // Time O(n^2), Space O(1)
         {
             // [1, 2, 3, 1] => true
             // [1, 2, 3, 4] => false
@@ -27,7 +27,7 @@ namespace HashMapAndSet
             return false;
         }
 
-        public static bool ContainsDuplicate_Resolve_2(int[] nums)
+        public static bool ContainsDuplicate_Resolve_2(int[] nums) // Time O(nlogn), Space O(n)
         {
             int[] numsCopy = new int[nums.Length];
             Array.Copy(nums, numsCopy, nums.Length);
@@ -42,7 +42,7 @@ namespace HashMapAndSet
             return false;
         }
 
-        public static bool ContainsDuplicate_Resolve_3(int[] nums)
+        public static bool ContainsDuplicate_Resolve_3(int[] nums) // Time O(n), Space O(n)
         {
             HashSet<int> hashSetNumber = new HashSet<int>();
 

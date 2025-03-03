@@ -1,4 +1,5 @@
 ﻿
+
 namespace HashMapAndSet
 {
     public class Program
@@ -6,9 +7,37 @@ namespace HashMapAndSet
         static void Main(string[] args)
         {
 
-
             // Contains Duplicate
-            TestContainDuplicate();
+            //TestContainDuplicate();
+            TestFirstUniqueCharacter();
+        }
+
+        private static void TestFirstUniqueCharacter()
+        {
+            string s1 = "leetcode"; // => 0
+            string s2 = "loveleetcode"; // => 2
+            string s3 = "aabb"; // => -1
+
+            var result = FirstUniqueChar.FirstUniqChar_Resolve_1(s1);
+            Console.WriteLine(result);
+            result = FirstUniqueChar.FirstUniqChar_Resolve_1(s2);
+            Console.WriteLine(result);
+            result = FirstUniqueChar.FirstUniqChar_Resolve_1(s3);
+            Console.WriteLine(result);
+
+            result = FirstUniqueChar.FirstUniqChar_Resolve_2(s1);
+            Console.WriteLine(result);
+            result = FirstUniqueChar.FirstUniqChar_Resolve_2(s2);
+            Console.WriteLine(result);
+            result = FirstUniqueChar.FirstUniqChar_Resolve_2(s3);
+            Console.WriteLine(result);
+
+            result = FirstUniqueChar.FirstUniqChar_Resolve_3(s1);
+            Console.WriteLine(result);
+            result = FirstUniqueChar.FirstUniqChar_Resolve_3(s2);
+            Console.WriteLine(result);
+            result = FirstUniqueChar.FirstUniqChar_Resolve_3(s3);
+            Console.WriteLine(result);
         }
 
         private static void TestContainDuplicate()
